@@ -3,6 +3,7 @@ ETL DAG с вынесенным SQL в отдельные файлы (dags/sql/)
 Задачи 1-4 используют PostgresOperator с путями к .sql файлам.
 Задачи 5-6 остаются Python-функциями, т.к. содержат логику, а не SQL.
 """
+
 import os
 from datetime import datetime, timedelta
 
@@ -15,6 +16,7 @@ from custom_operator import HelloOperator
 
 # Абсолютный путь к папке sql (рядом с этим DAG-файлом)
 SQL_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sql")
+
 
 
 # ---------------------------

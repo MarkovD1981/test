@@ -779,6 +779,7 @@ open http://localhost:3000
 
 ## 🛠 Стек
 
+
 - **Airflow 2.8** — оркестрация
 - **Python 3.11 + Pandas 2.1** — очистка
 - **PostgreSQL 15** — хранилище

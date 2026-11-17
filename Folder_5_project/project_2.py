@@ -920,6 +920,7 @@ python fetch_prices.py --once
 
 ## Дашборд Superset
 
+
 1. **Connect Database** → Postgres: `postgresql://superset:superset@postgres:5432/analytics`.
 2. Добавить датасет `analytics.mart_price_comparison`.
 3. Чарты:

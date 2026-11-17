@@ -30,6 +30,7 @@ MY_PROJECT/
 └── LICENSE                        ← создаёте вы (опционально)                                              файл
 
 
+
 MY_PROJECT/
 ├── dags/
 │   └── dag.py

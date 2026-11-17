@@ -24,6 +24,7 @@ text
 Проект: Витрина поставщиков и логистики (PostgreSQL → ClickHouse через dbt)
 Ниже — полный код всех файлов проекта. Структура:
 
+
 text
 /supplier-logistics-mart
 ├── docker-compose.yml
