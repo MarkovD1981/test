@@ -16,7 +16,6 @@ INSERT INTO test_users (name) VALUES
 
 
 
-
 UPDATE test_users
 SET is_active = FALSE
 WHERE name = 'Charlie';
