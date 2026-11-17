@@ -513,6 +513,7 @@ def clean_and_load_staging(**context):
     """)
 
 
+
     with engine.begin() as conn:
         conn.execute(upsert_sql, records)
 
