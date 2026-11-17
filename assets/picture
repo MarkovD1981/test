@@ -1,0 +1,62 @@
+Project
+    D .venv
+        D include  ------- хранить вспомогательные файлы, которые нужны для работы DAG'ов, но не являются самими DAG'ами.
+        D lib
+            D site-packages
+        D Scripts
+            F activate
+            F activate.bat
+            F activate.fish
+            F activate.nu
+            F activateps1
+            F deactivate.bat
+            F dotenv.exe
+            F f2py.exe
+            F idna.exe
+            F normalizer.exe
+            F numpy-config.exe
+            F pip.exe
+            F pip3.12.exe
+            F pip3.exe
+            F pip-3.12.exe
+            F pydoc.bat
+            F python.exe
+            F pythonw.exe
+
+
+
+------------------------------------------------------------------------
+            F .gitignore
+            F pyvenv.cfg
+    D assets  ------ Внешний вид — то, что видит пользователь: картинки, цвета, шрифты, кнопки.
+        f картинка WorkFlow_Data.png
+    D dags
+        f dag.py
+    D docker
+        F airflow.Dockerfile
+        F postgress-init.sql
+    D sql
+        F analytics_queries.sql
+        F create_table.sql
+    D src
+        F extract.py
+        F load.py
+        F transform.py
+    F .gitignore
+    F docker-compose.yaml
+    F env.example
+    F LICENSE
+    F README.md
+    F requirements.txt
+    D External Libraries
+        D Python 3.12(Project NAME)
+            D .venv ---------таже что в начале
+            D Binary Sceletons
+            D DLLs
+            D Extended Definitions
+            D Lib
+            D Python
+            D site-packages  ------ таже что в начале
+            D Typeshed Stubs
+    Scratches and Consoles
+
