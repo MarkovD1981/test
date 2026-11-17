@@ -1,0 +1,67 @@
+сам
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+MY_PROJECT/
+│
+├── dags/                          ← создаёте вы                                            1 папка
+│   └── dag.py                     ← DAG: оркестрация задач (extract → transform → load)                    файл
+├── plugins/              ← создаёте здесь                                                  2 папка
+│   └── custom_operator.py  ← ваш кастомный оператор                                                        файл
+├── src/                           ← создаёте вы (или scripts/)                             3 папка
+│   ├── extract.py                 ← Python: запрос к API, возврат DataFrame                                файл
+│   ├── transform.py               ← Python: очистка, snake_case, дедупликация                              файл
+│   └── load.py                    ← Python: to_sql в PostgreSQL                                            файл
+│
+├── sql/                           ← создаёте вы                                            4 папка
+│   ├── create_table.sql           ← DDL: явное создание таблицы (задел)                                    файл
+│   └── analytics_queries.sql      ← DQL: аналитика + data quality checks                                   файл
+│
+├── docker/                        ← создаёте вы                                            5 папка
+│   ├── airflow.Dockerfile         ← кастомный образ Airflow (доп. пакеты)                                  файл
+│   └── postgres-init.sql          ← инициализация БД при первом старте Postgres                            файл
+│
+├── assets/                        ← создаёте вы (опционально)                              6 папка
+│   └── WorkFlow_Data.png          ← картинка схемы пайплайна (для README)                                  файл
+│
+├── .gitignore                     ← создаёте вы (venv/, __pycache__/, .idea/, .env)                        файл
+├── docker-compose.yaml            ← создаёте вы (сервисы: postgres, airflow-webserver, scheduler)          файл
+├── env.example                    ← создаёте вы (шаблон переменных, БЕЗ реальных паролей)                  файл
+├── requirements.txt               ← создаёте вы (apache-airflow, pandas, requests, psycopg2...)            файл
+├── README.md                      ← создаёте вы (описание проекта, как запустить)                          файл
+└── LICENSE                        ← создаёте вы (опционально)                                              файл
+
+
+MY_PROJECT/
+├── dags/
+│   └── dag.py
+├── plugins/              ← создаёте здесь
+│   └── custom_operator.py  ← ваш кастомный оператор
+├── src/
+├── sql/
+├── docker/
+└── ...
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+само
+
+
+MY_PROJECT/
+│
+├── .venv/                         ← создаёт PyCharm/`python -m venv` (НЕ коммитить)
+│   ├── include/
+│   ├── lib/
+│   ├── scripts/                   ← на Windows: python.exe, pip.exe, activate...
+│   ├── pyvenv.cfg
+│   └── .gitignore                 ← внутренний, не ваш
+│
+├── .idea/                         ← создаёт PyCharm (НЕ коммитить, кроме отдельных файлов)
+│
+├── logs/                          ← создаёт Airflow в рантайме (НЕ коммитить)
+│   └── ...                        ← логи задач: dag_id/task_id/date/try.log
+│
+├── __pycache__/                   ← создаёт Python (НЕ коммитить)
+│
+└── External Libraries/            ← виртуальное отображение в PyCharm (не на диске)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
