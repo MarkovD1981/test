@@ -10,7 +10,6 @@ class HelloOperator(BaseOperator):
         super().__init__(**kwargs)
         self.name = name
 
-
     def execute(self, context):
         message = f"Hello, {self.name}!"
         self.log.info(message)
