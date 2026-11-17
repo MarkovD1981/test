@@ -67,6 +67,9 @@ x-airflow-common: &airflow-common
 
 services:
   # ---------- Airflow metadata DB ----------
+
+
+
   airflow-postgres:
     image: postgres:15
     container_name: airflow-postgres
