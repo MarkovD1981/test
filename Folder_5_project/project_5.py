@@ -19,6 +19,7 @@
 Структура репозитория:
 
 
+
 text
 /product-sales-marts-airflow
 ├── dags/catalog_sales_pipeline.py

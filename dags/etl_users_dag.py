@@ -12,6 +12,7 @@ from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 
+
 from custom_operator import HelloOperator
 
 # Абсолютный путь к папке sql (рядом с этим DAG-файлом)

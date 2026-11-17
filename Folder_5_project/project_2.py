@@ -933,6 +933,7 @@ python fetch_prices.py --once
 ## Надёжность
 
 
+
 - **Retry** — `tenacity`, экспоненциальный бэкофф (0.5–10 с), до 5 попыток.
 - **Rate limit** — клиентский token bucket (`RATE_LIMIT_RPS`) + обработка `429` c `Retry-After`.
 - **Конкурентность** — `asyncio.Semaphore(MAX_CONCURRENCY)`.
