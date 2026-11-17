@@ -15,6 +15,7 @@ ETL: Python-скрипт (или Airflow DAG) для извлечения из P
 
 Структура репозитория:
 
+
 text
 /supplier-logistics-mart
 ├── extract/load_to_clickhouse.py

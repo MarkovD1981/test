@@ -18,7 +18,6 @@ from custom_operator import HelloOperator
 SQL_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sql")
 
 
-
 # ---------------------------
 # Python-функции для задач
 # ---------------------------

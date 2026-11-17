@@ -512,6 +512,7 @@ def clean_and_load_staging(**context):
             updated_at        = now()
     """)
 
+
     with engine.begin() as conn:
         conn.execute(upsert_sql, records)
 

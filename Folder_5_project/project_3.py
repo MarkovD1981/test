@@ -18,6 +18,7 @@
 Структура репозитория:
 
 
+
 text
 /realtime-stock-clickhouse
 ├── producer/stock_producer.py
